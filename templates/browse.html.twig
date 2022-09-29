@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for game in games %}
+        Naam: <span>{{ game.name }}</span>
+        <br>
+        Genre: <span>{{ game.genre }}</span>
+        <br>
+        Aantal spelers: <span>{{ game.neededplayers }}</span>
+        <br>
+        <br>
+    {% endfor %}
+{% endblock %}
